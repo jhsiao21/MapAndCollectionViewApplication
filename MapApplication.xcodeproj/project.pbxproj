@@ -16,6 +16,12 @@
 		02EF8EBB2BC2C19400CA6274 /* MapApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EF8EBA2BC2C19400CA6274 /* MapApplicationTests.swift */; };
 		02EF8EC52BC2C19400CA6274 /* MapApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EF8EC42BC2C19400CA6274 /* MapApplicationUITests.swift */; };
 		02EF8EC72BC2C19400CA6274 /* MapApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EF8EC62BC2C19400CA6274 /* MapApplicationUITestsLaunchTests.swift */; };
+		02EF8ED42BC2C32A00CA6274 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EF8ED32BC2C32A00CA6274 /* CollectionViewCell.swift */; };
+		02EF8ED92BC2C76400CA6274 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EF8ED82BC2C76400CA6274 /* ViewModel.swift */; };
+		02EF8EDC2BC2C79A00CA6274 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EF8EDB2BC2C79A00CA6274 /* Location.swift */; };
+		02EF8EDF2BC2C8BD00CA6274 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EF8EDE2BC2C8BD00CA6274 /* APIClient.swift */; };
+		02EF8EE12BC2CE6F00CA6274 /* mockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 02EF8EE02BC2CE6F00CA6274 /* mockData.json */; };
+		02EF8EE32BC2CF3E00CA6274 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EF8EE22BC2CF3E00CA6274 /* DataLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		02EF8EC02BC2C19400CA6274 /* MapApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02EF8EC42BC2C19400CA6274 /* MapApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapApplicationUITests.swift; sourceTree = "<group>"; };
 		02EF8EC62BC2C19400CA6274 /* MapApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		02EF8ED32BC2C32A00CA6274 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		02EF8ED82BC2C76400CA6274 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		02EF8EDB2BC2C79A00CA6274 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		02EF8EDE2BC2C8BD00CA6274 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		02EF8EE02BC2CE6F00CA6274 /* mockData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mockData.json; sourceTree = "<group>"; };
+		02EF8EE22BC2CF3E00CA6274 /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +111,15 @@
 		02EF8EA22BC2C19200CA6274 /* MapApplication */ = {
 			isa = PBXGroup;
 			children = (
-				02EF8EA32BC2C19200CA6274 /* AppDelegate.swift */,
-				02EF8EA52BC2C19200CA6274 /* SceneDelegate.swift */,
-				02EF8EA72BC2C19200CA6274 /* ViewController.swift */,
-				02EF8EA92BC2C19200CA6274 /* Main.storyboard */,
+				02EF8EE02BC2CE6F00CA6274 /* mockData.json */,
+				02EF8EDD2BC2C8AB00CA6274 /* Service */,
+				02EF8EDA2BC2C78100CA6274 /* Model */,
+				02EF8ED72BC2C74C00CA6274 /* Application */,
+				02EF8ED62BC2C73900CA6274 /* View */,
+				02EF8ED52BC2C73000CA6274 /* ViewModel */,
 				02EF8EAC2BC2C19400CA6274 /* Assets.xcassets */,
-				02EF8EAE2BC2C19400CA6274 /* LaunchScreen.storyboard */,
 				02EF8EB12BC2C19400CA6274 /* Info.plist */,
+				02EF8ED32BC2C32A00CA6274 /* CollectionViewCell.swift */,
 			);
 			path = MapApplication;
 			sourceTree = "<group>";
@@ -125,6 +139,50 @@
 				02EF8EC62BC2C19400CA6274 /* MapApplicationUITestsLaunchTests.swift */,
 			);
 			path = MapApplicationUITests;
+			sourceTree = "<group>";
+		};
+		02EF8ED52BC2C73000CA6274 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				02EF8ED82BC2C76400CA6274 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		02EF8ED62BC2C73900CA6274 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02EF8EA72BC2C19200CA6274 /* ViewController.swift */,
+				02EF8EA92BC2C19200CA6274 /* Main.storyboard */,
+				02EF8EAE2BC2C19400CA6274 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02EF8ED72BC2C74C00CA6274 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				02EF8EA52BC2C19200CA6274 /* SceneDelegate.swift */,
+				02EF8EA32BC2C19200CA6274 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		02EF8EDA2BC2C78100CA6274 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02EF8EDB2BC2C79A00CA6274 /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		02EF8EDD2BC2C8AB00CA6274 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				02EF8EDE2BC2C8BD00CA6274 /* APIClient.swift */,
+				02EF8EE22BC2CF3E00CA6274 /* DataLoader.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02EF8EAD2BC2C19400CA6274 /* Assets.xcassets in Resources */,
+				02EF8EE12BC2CE6F00CA6274 /* mockData.json in Resources */,
 				02EF8EB02BC2C19400CA6274 /* Base in Resources */,
 				02EF8EAB2BC2C19200CA6274 /* Base in Resources */,
 			);
@@ -258,8 +317,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02EF8ED92BC2C76400CA6274 /* ViewModel.swift in Sources */,
+				02EF8EDF2BC2C8BD00CA6274 /* APIClient.swift in Sources */,
 				02EF8EA82BC2C19200CA6274 /* ViewController.swift in Sources */,
 				02EF8EA42BC2C19200CA6274 /* AppDelegate.swift in Sources */,
+				02EF8EE32BC2CF3E00CA6274 /* DataLoader.swift in Sources */,
+				02EF8ED42BC2C32A00CA6274 /* CollectionViewCell.swift in Sources */,
+				02EF8EDC2BC2C79A00CA6274 /* Location.swift in Sources */,
 				02EF8EA62BC2C19200CA6274 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

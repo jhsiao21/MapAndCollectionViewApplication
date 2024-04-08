@@ -2,9 +2,12 @@
 
 This exercise is designed to mimic one of functions in [ChicTrip App](https://www.chictrip.com.tw/?action=main) called "找附近".
 
-demo:
+找附近:
 
 ![](images/chictrip.jpeg)
+
+demo:
+
 ![](images/demo.gif)
 
 
